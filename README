@@ -87,16 +87,3 @@ Si haces tu propia copia y no quieres enviar datos, deja vacía la dirección `E
 
 Este proyecto se desarrolló con ayuda de **Claude** (Anthropic), un modelo de lenguaje. El código del juego, el banner y las imágenes de la página se generaron en colaboración con esta herramienta y fueron revisados y ajustados a lo largo del desarrollo.
 
-## 📄 Licencia
-
-Elige la licencia que prefieras y agrega un archivo `LICENSE`. Algunas opciones comunes:
-
-- **MIT**: permite usar y modificar el código casi sin restricciones.
-- **CC BY-NC 4.0**: permite compartir y adaptar, pero no usarlo comercialmente.
-- **Todos los derechos reservados**: si solo quieres que se juegue, no que se reutilice.
-
-*(Borra esta sección o reemplázala por la licencia elegida.)*
-
-## 💬 Comentarios
-
-¿Encontraste un error o tienes una idea? Abre un [issue](../../issues) o deja tu opinión en la página del juego.
