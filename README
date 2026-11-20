@@ -1,0 +1,108 @@
+# 🌙 Valle de la Calma
+
+> Cruza el valle, calma la corrupción y derrota a cinco guardianes oscuros en una aventura de acción de 30 salas.
+
+![Banner de Valle de la Calma](docs/banner_1920x540.png)
+
+**Valle de la Calma** es un juego de acción por salas con aire de cuento oscuro, hecho en HTML, CSS y JavaScript, sin librerías externas. Se juega directamente en el navegador. Una partida completa dura unos 30 minutos.
+
+▶️ **Jugar en línea:** `https://TU-USUARIO.itch.io/valle-de-la-calma` *(cambia este enlace por el tuyo)*
+
+---
+
+## ✨ Características
+
+- **30 salas en 5 actos:** Praderas del Alba, Cavernas Oscuras, Bosque de Cristal, Brasas del Olvido y Corazón del Vacío. Cada acto tiene su propio ambiente y música.
+- **5 jefes** con varias fases, patrones de ataque distintos y obeliscos que protegen su escudo.
+- **Bendiciones:** eliges una tras cada sala y las combinas para armar tu estilo de juego.
+- **Corrupción:** sube cuando te golpean y baja cuando juegas con calma. Cuanto más alta, más peligroso se vuelve el valle.
+- **Salas variadas:** combate, élite, santuarios de runas, descansos y la *Marea de espinas*, donde hay que sobrevivir contra oleadas continuas.
+- **Modificadores de sala:** niebla densa, enemigos veloces, suelo ardiente, fortuna doble y gigantes.
+- **Enemigos variados:** cazadores, obeliscos, invocadores, colosos y más.
+- **Velas:** si caes, continúas desde el inicio de la sala con tu mismo equipo.
+- **Mejoras permanentes** que se compran en el Santuario con los fragmentos que ganas.
+- **Menú de pausa** con progreso, atributos, bendiciones, ajustes de audio y efectos, y controles.
+- **Música y efectos de sonido generados por código** (Web Audio), sin archivos de audio.
+- **Compatible con pantalla táctil.**
+
+## 🎮 Controles
+
+| Acción | Teclado y mouse |
+|---|---|
+| Moverte | `W` `A` `S` `D` o flechas |
+| Ataque de espada (combo de 3 golpes) | Clic izquierdo |
+| Orbe de luz | Clic derecho |
+| Esquivar | `Espacio` o `Shift` |
+| Interactuar | `E` |
+| Pausa | `Esc` o `P` |
+| Silenciar música | `M` |
+
+En pantallas táctiles aparecen los controles en pantalla.
+
+## 🚀 Cómo ejecutarlo
+
+No necesita instalación ni dependencias.
+
+1. Descarga o clona este repositorio.
+2. Abre el archivo `Valle_de_la_Calma_30_Niveles.html` en tu navegador (Chrome, Edge o Firefox).
+
+```bash
+git clone https://github.com/TU-USUARIO/valle-de-la-calma.git
+cd valle-de-la-calma
+# abre el HTML con doble clic, o sírvelo localmente:
+python3 -m http.server 8000
+# luego visita http://localhost:8000
+```
+
+### Publicarlo con GitHub Pages
+
+1. Renombra el juego como `index.html` (o crea uno que lo cargue).
+2. En el repositorio ve a **Settings → Pages**.
+3. En *Source* elige la rama `main` y la carpeta `/ (root)`.
+4. Tu juego quedará en `https://TU-USUARIO.github.io/valle-de-la-calma/`.
+
+## 🗂️ Estructura
+
+```
+.
+├── Valle_de_la_Calma_30_Niveles.html   # el juego completo (un solo archivo)
+├── Dashboard_Valle_de_la_Calma.html    # panel de estadísticas de las partidas (opcional)
+├── docs/                               # banner, portada y fondo para la página del juego
+└── README.md
+```
+
+> Ajusta los nombres de archivo si los tuyos son distintos.
+
+## 📊 Datos y privacidad
+
+Para mejorar el balance del juego, al terminar o abandonar una partida se envían de forma **anónima** datos de juego (sala alcanzada, tiempo, enemigos derrotados, recorrido por las salas) y, si la contestas, la encuesta final de cinco preguntas. No se recopila nombre, correo ni información personal.
+
+Tus ajustes y tu progreso se guardan en el almacenamiento local de tu navegador (`localStorage`). Si borras los datos del sitio, se pierden.
+
+Si haces tu propia copia y no quieres enviar datos, deja vacía la dirección `ENDPOINT` en el código del juego.
+
+## 🛠️ Detalles técnicos
+
+- Un solo archivo HTML con tres scripts, sin dependencias ni proceso de compilación.
+- Gráficos dibujados con **Canvas 2D** y escenas generadas por código.
+- Audio con **Web Audio API**: música y efectos sintetizados en tiempo real.
+- Los jefes usan una máquina de fases con patrones de ataque combinables.
+- Las salas se generan de forma procedural a partir de una semilla.
+
+## 🤖 Uso de IA generativa
+
+Este proyecto se desarrolló con ayuda de **Claude** (Anthropic), un modelo de lenguaje. El código del juego, el banner y las imágenes de la página se generaron en colaboración con esta herramienta y fueron revisados y ajustados a lo largo del desarrollo.
+
+## 📄 Licencia
+
+Elige la licencia que prefieras y agrega un archivo `LICENSE`. Algunas opciones comunes:
+
+- **MIT**: permite usar y modificar el código casi sin restricciones.
+- **CC BY-NC 4.0**: permite compartir y adaptar, pero no usarlo comercialmente.
+- **Todos los derechos reservados**: si solo quieres que se juegue, no que se reutilice.
+
+*(Borra esta sección o reemplázala por la licencia elegida.)*
+
+## 💬 Comentarios
+
+¿Encontraste un error o tienes una idea? Abre un [issue](../../issues) o deja tu opinión en la página del juego.
